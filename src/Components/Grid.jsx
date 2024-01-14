@@ -10,9 +10,13 @@ function Grid({ items }) {
             {items.length === 0 ? <FallbackComponent /> : items.map((item, index) => {
                 if (item.isLink) {
                     return (
-                        <Link key={index} to={item.to} {...stylex.props(gridStyle.item, styles.link)}>
-                            {item.label}
-                        </Link>
+                        <div key={index} {...stylex.props(gridStyle.item)}>
+                            <Link to={item.to} {...stylex.props(styles.link)}>
+                                {item.label}
+                            </Link>
+                            <br />
+                            {item.children}
+                        </div>
                     );
                 } else {
                     return (

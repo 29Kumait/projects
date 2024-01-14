@@ -18,7 +18,9 @@ function MainPage() {
 
     return (
         <>
+            <AnimatedContainer />
             <div>
+
                 <a href="https://www.hackyourfuture.net" target="_blank" rel="noreferrer">
                     <img src={inputLogo} {...stylex.props(styles.logo)} alt="logo" />
                 </a>
@@ -29,18 +31,23 @@ function MainPage() {
                     currentImageIndex={currentImageIndex}
                     stylexProps={stylex.props(styles.logo, styles.logoFly, isAnimated && styles.combinedAnimation)}
                 />
-                <Link to="/museum">Go to Museum </Link>
             </div>
-            <h1 {...stylex.props(styles.heading)}> {'< HYF '} </h1>
-            <h2 {...stylex.props(styles.heading)}>{'  className={45} />'}</h2>
+
+            <h1 {...stylex.props(styles.heading)}> {'< HYF/>'} </h1>
+            <AnimatedContainer />
+
 
             <div>
                 <ChartComponent />
             </div>
-
-            <Grid items={[
-                { isLink: true, to: 'https://29kumait.github.io/codespaces/', label: 'Assignment' },
-                'Item 1', 'Item 2', 'Item 3']} />
+            <AnimatedContainer />
+            <Grid items={['Item 1', 'Item 2', 'Item 3', {
+                isLink: true,
+                to: 'https://29kumait.github.io/codespaces/',
+                label: 'Assignment',
+                children: <Link to="/museum" {...stylex.props(styles.link)}>Go to Museum </Link>
+            },
+            ]} />
 
             <div>
                 <AnimatedContainer />
