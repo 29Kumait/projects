@@ -4,7 +4,7 @@ import * as stylex from "@stylexjs/stylex";
 const styles = stylex.create({
     container: {
         padding: 20,
-        backgroundColor: '#171f2b',
+        backgroundColor: '#4B97B7CF',
         borderRadius: 8,
 
     },

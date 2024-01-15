@@ -4,7 +4,7 @@ import * as stylex from "@stylexjs/stylex";
 import { nav } from '../stylex';
 
 const Navbar = ({ activeLink, setActiveLink, isMenuOpen }) => {
-    const navItems = ["home", "about", "more"].map((item) => (
+    const navItems = ["home", "projects", "more"].map((item) => (
         <Link
             key={item}
             to={`/${item}`}

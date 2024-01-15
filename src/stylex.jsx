@@ -56,7 +56,7 @@ export const styles = stylex.create({
     },
     link: {
         fontWeight: 500,
-        color: '#4a86c7',
+        color: '#33445788',
         textDecoration: 'inherit',
         ':hover': {
             color: 'rbg(106,115,123)',

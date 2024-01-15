@@ -27,7 +27,7 @@ function MorePage() {
             ]} />
 
             <Grid items={[
-                { isLink: true, to: '/about', label: 'About' },
+                { isLink: true, to: '/projects', label: 'Projects' },
                 { label: 'Item End' },
 
             ]} />
