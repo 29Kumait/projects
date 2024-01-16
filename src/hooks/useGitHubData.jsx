@@ -6,6 +6,12 @@ const useGitHubData = (classmates) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    // Helper function to delay a promise
+    function delay(t, v) {
+        return new Promise(function (resolve) {
+            setTimeout(resolve.bind(null, v), t)
+        });
+    }
 
     async function fetchUserData(username) {
         try {
@@ -15,6 +21,8 @@ const useGitHubData = (classmates) => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
+            // Delay the next request
+            await delay(1000);
             return data;
         } catch (error) {
             console.error("Error fetching user data:", error);
@@ -30,6 +38,8 @@ const useGitHubData = (classmates) => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
+            // Delay the next request
+            await delay(1000);
             return data;
         } catch (error) {
             console.error("Error fetching repo data:", error);

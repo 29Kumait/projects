@@ -1,6 +1,6 @@
 // FallbackComponent.jsx
 function FallbackComponent() {
-    return <div> else to display, </div>;
+    return <div>  </div>;
 }
 
 export default FallbackComponent;

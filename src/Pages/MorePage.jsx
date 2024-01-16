@@ -1,41 +1,59 @@
-// MorePage.jsx
+
 import Grid from '../Components/Grid.jsx'
 import AnimatedContainer from '../Components/Box.jsx'
+import JosephineImage from '../../public/josephin.png';
+import StasImage from '../../public/stas.png';
+import CindyImage from '../../public/cindy.png';
 
 function MorePage() {
     return (
         <>
             <h1>More</h1>
-
             <Grid items={[
-                { label: '1' },
-                { label: '2' },
+                { label: <> <p>Community Manager</p> <Grid.Image src={JosephineImage} alt='Joséphine Dupuy' /> </> },
+                { label: '' },
+                { label: 'HYF' },
+                { label: <Grid.Label>I am thrilled to be joining the HackYourFuture team as the Diversity and Inclusion Lead. In this role, I am eager to support and empower tech companies. Additionally, I am excited to stand by our graduates as they navigate their journey towards employment.<br />GIUSEPPINA TRICOLI D&I Lead at HackYourFuture</Grid.Label> },
+                { label: '' },
             ]} />
             <Grid items={[
-                { label: '3' },
-                { label: 'Item 4' },
-                { label: 'Item 5' },
+
+                { label: <Grid.Text>Joséphine Dupuy </Grid.Text> },
+                { label: <Grid.Label>Hi @studentsofclass45, Hope you're well! Coming Sunday's session will take place offline. Please let me know if you need a train ticket to attend. Also let me know if you have an OV discount for future references. Good afternoon @studentsofclass45, I hope you're all well! We will have a class call this Wednesday at 13:30; I will message you tomorrow about further info on this Friday's MacKinsey's training, Have a good evening.</Grid.Label> },
+                { label: '' },
+                { label: <Grid.Text>Stas Seldin</Grid.Text> },
 
             ]} />
-
-
             <Grid items={[
-                { label: 'Item 6' },
-                { label: ' 7' },
-                { label: ' 8' },
-                { label: 'Last 9' },
+                { label: '' },
+                { label: '' },
+                { label: <Grid.Label><h3>Stas Seldin</h3>Good morning everyone! Today Stas's tech hour is back! :party: :party: :party: I will be available from 10:00 to 11:00 to help you out with questions, bugs or other issues you have. Everyone is welcome to join!</Grid.Label> },
+                { label: <Grid.Image src={StasImage} alt='Stas Seldin' /> },
             ]} />
-
+            <
+                Grid items={[
+                    { label: 'HYF' },
+                    { label: '' },
+                    { label: '' },
+                    { label: 'Education Director' },
+                ]} />
             <Grid items={[
-                { isLink: true, to: '/projects', label: 'Projects' },
-                { label: 'Item End' },
+                { label: '' },
+                { label: <Grid.Text>Cindy Kröse</Grid.Text> },
+                { label: <Grid.Image src={CindyImage} alt='Cindy Kröse' /> },
+                { label: '' },
+                { label: '' },
+            ]} />
+            <Grid items={[
+                { label: '' },
+                { label: <Grid.Label><h2>Cindy Kröse</h2> <p>2 months ago</p> <h3>can you try again, we are all in<br />Hi, are you out again?</h3></Grid.Label> },
+
+                { label: 'Managing Director' },
 
             ]} />
-            <Grid items={[]} />
-
             <AnimatedContainer />
         </>
-    )
+    );
 }
 
 export default MorePage;
