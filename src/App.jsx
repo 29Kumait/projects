@@ -9,6 +9,8 @@ import MorePage from './Pages/MorePage.jsx';
 import DarkModeToggle from './Components/DarkModeToggle';
 import { styles, nav, darkModeStyles } from './stylex.jsx';
 import MuseumPage from './Pages/MuseumPage.jsx';
+import TheProvider from "./Components/Context.jsx";
+import StarredPage from './Pages/StarredPage.jsx';
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -18,6 +20,7 @@ function App() {
     const currentRootStyle = darkMode ? { ...styles.root, ...darkModeStyles.darkRoot } : styles.root;
 
     return (
+        <TheProvider>
         <Router basename="/">
             <div {...stylex.props(currentRootStyle)}>
                 <div {...stylex.props(nav.navbar)}>
@@ -33,9 +36,12 @@ function App() {
                     <Route path="/projects" element={<div data-testid="project-page"><ProjectPage /></div>} />
                     <Route path="/more" element={<div data-testid="more-page"><MorePage /></div>} />
                     <Route path="/museum" element={<div data-testid="museum-page"><MuseumPage /></div>} />
+                    <Route path="/Starred" element={<div data-testid="starred-page"><StarredPage /></div>} />
+
                 </Routes>
             </div>
         </Router>
+</TheProvider>
     );
 }
 
