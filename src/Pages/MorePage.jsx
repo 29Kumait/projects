@@ -1,9 +1,9 @@
 
 import Grid from '../Components/Grid.jsx'
 import AnimatedContainer from '../Components/Box.jsx'
-import JosephineImage from '../../public/josephin.png';
-import StasImage from '../../public/stas.png';
-import CindyImage from '../../public/cindy.png';
+import JosephineImage from '/josephin.png';
+import StasImage from '/stas.png';
+import CindyImage from '/cindy.png';
 
 function MorePage() {
     return (
