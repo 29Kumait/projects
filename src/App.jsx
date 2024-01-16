@@ -17,52 +17,26 @@ function App() {
 
     const currentRootStyle = darkMode ? { ...styles.root, ...darkModeStyles.darkRoot } : styles.root;
 
-
     return (
-
         <Router basename="/">
             <div {...stylex.props(currentRootStyle)}>
                 <div {...stylex.props(nav.navbar)}>
-                    <button {...stylex.props(styles.button)} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <button data-testid="menu-button" {...stylex.props(styles.button)} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         <RocketIcon size={29} />
                     </button>
-                    <Navbar activeLink={activeLink} setActiveLink={setActiveLink} isMenuOpen={isMenuOpen} />
-                    <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-
+                    <Navbar data-testid="navbar" activeLink={activeLink} setActiveLink={setActiveLink} isMenuOpen={isMenuOpen} />
+                    <DarkModeToggle data-testid="dark-mode-toggle" darkMode={darkMode} setDarkMode={setDarkMode} />
                 </div>
                 <Routes>
-                    <Route path="/" element={<MainPage />} />
-                    <Route path="/home" element={<MainPage />} />
-                    <Route
-                        path="/projects"
-                        element={
-                            <ProjectPage />
-                        } />
-                    <Route
-                        path="/more"
-                        element={
-                            <MorePage />
-                        }
-                    />
-                    <Route
-                        path="/museum"
-                        element={
-
-                            <MuseumPage />
-
-                        }
-                    />
-
+                    <Route path="/" element={<div data-testid="main-page"><MainPage /></div>} />
+                    <Route path="/home" element={<div data-testid="main-page"><MainPage /></div>} />
+                    <Route path="/projects" element={<div data-testid="project-page"><ProjectPage /></div>} />
+                    <Route path="/more" element={<div data-testid="more-page"><MorePage /></div>} />
+                    <Route path="/museum" element={<div data-testid="museum-page"><MuseumPage /></div>} />
                 </Routes>
-
             </div>
         </Router>
-
     );
 }
 
 export default App;
-
-
-// // import UilReact from '@iconscout/react-unicons/icons/uil-react';
-// {/*<UilReact size="29" color="#61DAFB" />*/}
