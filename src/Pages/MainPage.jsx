@@ -18,7 +18,7 @@ function MainPage() {
 
     return (
         <>
-            <AnimatedContainer />
+
             <div>
 
                 <a href="https://www.hackyourfuture.net" target="_blank" rel="noreferrer">
@@ -33,21 +33,24 @@ function MainPage() {
                 />
             </div>
 
-            <h1 {...stylex.props(styles.heading)}> {'< HYF/>'} </h1>
-            <AnimatedContainer />
+
+            <h1 {...stylex.props(styles.heading)}> {'<HYF />'} </h1>
 
 
             <div>
                 <ChartComponent />
             </div>
-            <AnimatedContainer />
             <Grid items={['Item 1', 'Item 2', 'Item 3', {
                 isLink: true,
                 to: 'https://29kumait.github.io/codespaces/',
                 label: 'Assignment',
-                children: <Link to="/museum" {...stylex.props(styles.link)}>Go to Museum </Link>
-            },
-            ]} />
+                children: (
+                    <>
+                        <AnimatedContainer />
+                        <Link to="/museum" {...stylex.props(styles.link,)}>Go to Museum </Link>
+                    </>
+                )
+            }]} />
 
             <div>
                 <AnimatedContainer />

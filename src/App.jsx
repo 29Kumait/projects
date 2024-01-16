@@ -4,12 +4,11 @@ import { RocketIcon } from '@primer/octicons-react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './Pages/MainPage.jsx';
 import Navbar from './Components/Navbar.jsx';
-import AboutPage from './Pages/AboutPage.jsx';
+import ProjectPage from './Pages/ProjectPage.jsx';
 import MorePage from './Pages/MorePage.jsx';
 import DarkModeToggle from './Components/DarkModeToggle';
 import { styles, nav, darkModeStyles } from './stylex.jsx';
 import MuseumPage from './Pages/MuseumPage.jsx';
-import AnimatedContainer from './Components/Box.jsx';
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -23,7 +22,6 @@ function App() {
 
         <Router basename="/">
             <div {...stylex.props(currentRootStyle)}>
-                <AnimatedContainer />
                 <div {...stylex.props(nav.navbar)}>
                     <button {...stylex.props(styles.button)} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         <RocketIcon size={29} />
@@ -36,9 +34,9 @@ function App() {
                     <Route path="/" element={<MainPage />} />
                     <Route path="/home" element={<MainPage />} />
                     <Route
-                        path="/about"
+                        path="/projects"
                         element={
-                            <AboutPage />
+                            <ProjectPage />
                         } />
                     <Route
                         path="/more"

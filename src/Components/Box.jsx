@@ -4,13 +4,13 @@ import * as stylex from "@stylexjs/stylex";
 const styles = stylex.create({
     container: {
         padding: 20,
-        backgroundColor: '#171f2b',
+        backgroundColor: '#4B97B7CF',
         borderRadius: 8,
 
     },
 });
 
-const AnimatedContainer = () => {
+const AnimatedContainer = ({ children }) => {
     const containerVariants = {
         hidden: { opacity: 0, x: '-100vw' },
         visible: { opacity: 1, x: 0 },
@@ -24,6 +24,7 @@ const AnimatedContainer = () => {
             animate="visible"
             className={stylex(styles.container)}
         >
+            {children}
         </motion.div>
     );
 };
