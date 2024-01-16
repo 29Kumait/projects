@@ -32,7 +32,7 @@ function MainPage() {
     const gridItems = [
         [{ label: '1' }, { label: '2' }],
         [{ label: '3' }, { label: 'Item 4' }, { isLink: true, children: <AnimatedContainer><Link to="/museum" {...stylex.props(styles.link)}> Rijksmuseum </Link></AnimatedContainer> }],
-        [{ label: 'Item 6' }, { label: ' 7' }, { isLink: true, children: <AnimatedContainer><Link to="https://29kumait.github.io/codespaces/" {...stylex.props(styles.link)}> Assignment 45 </Link></AnimatedContainer>}, { label: 'Last 9' }],
+        [{ label: 'Item 6' }, { label: ' 7' }, { isLink: true, children: <AnimatedContainer><Link to="https://29kumait.github.io/Out-Of-Sync/" {...stylex.props(styles.link)}> Assignment 45 in the Side </Link></AnimatedContainer>}, { label: 'Last 9' }],
         [{ isLink: true, to: '/starred', label: 'StarredPage' }, { label: 'Item End' }],
     ];
 
