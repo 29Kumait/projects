@@ -7,6 +7,7 @@
 @layer priority2{
 .xkladdv{animation:x1wc8ddo-B infinite 20s linear}
 .xoumuey{border:1px solid #eee}
+.x1kr9q8o{border:2px solid #000}
 .x1bl9orw{margin:0 1rem}
 .x19bbpc0{margin:0 auto}
 .x1v36x0e{margin:20px auto}
@@ -17,6 +18,7 @@
 .x1qhigcl{padding:20px}
 }
 @layer priority3{
+.x16rqkct{border-radius:50%}
 .xur7f20{border-radius:8px}
 .xou54vl{gap:16px}
 .x1a2a7pz{outline:none}
@@ -38,9 +40,9 @@
 .x1lthck4{animation-name:x1wc8ddo-B,x18re5ia-B}
 .x1m6ci5k{animation-timing-function:linear,ease-out}
 .x1pyj4ig{background-color:#050F1AE8}
-.xz6tkw2{background-color:#171f2b}
 .x1wyi52x{background-color:#33445788}
 .x1l5t2tb{background-color:#3E3E3E57}
+.xyrra7z{background-color:#4B97B7CF}
 .x7vvwvu{background-color:#54C3EF9E}
 .xa81htb{background-color:#bdbdbd}
 .x679uo6{background-color:rgba(0,0,0,.8)}
@@ -90,6 +92,7 @@ html[dir='rtl'] .xc73u3c{padding-left:20px}
 }
 @layer priority5{
 .x5yr21d{height:100%}
+.xpyat2d{height:100px}
 .x7g90rz{height:13em}
 .x1jmrah7{height:19em}
 .xrlp1an{height:256px}
@@ -107,6 +110,7 @@ html[dir='rtl'] .xc73u3c{padding-left:20px}
 .x889kno{padding-top:10px}
 .x13vifvy{top:0}
 .xh8yej3{width:100%}
+.x1exxlbk{width:100px}
 .x1t9vceh{width:256px}
 .xktia5q{width:80%}
 .x14atkfc{width:auto}
