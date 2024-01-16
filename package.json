@@ -1,5 +1,5 @@
 {
-  "name": "i",
+  "name": "project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -23,7 +23,6 @@
     "@stylexjs/stylex": "^0.3.0",
     "chart.js": "^4.4.1",
     "framer-motion": "^10.18.0",
-    "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-ga4": "^2.1.0",
     "react-router-dom": "^6.21.2",
