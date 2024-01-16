@@ -28,6 +28,7 @@
 .x1f5mfz7{transition:border-color .25s}
 .x1b185zu{transition:color .3s}
 .xhf3uvu{transition:filter .3s}
+.xld6rxc{transition:left .3s ease-in-out}
 .xwwlqu2:focus, :focus-visible{outline:4px auto -webkit-focus-ring-color}
 .x8ve93a:hover{border-color:#4b51b7}
 }
@@ -46,11 +47,26 @@
 .x7vvwvu{background-color:#54C3EF9E}
 .xa81htb{background-color:#bdbdbd}
 .x679uo6{background-color:rgba(0,0,0,.8)}
+.x16h7yo4{background-color:rgba(0,0,0,.88)}
 .x18d0r48{background-size:cover}
 .xijnpox{box-shadow:0 4px 8px rgba(0,0,0,.1)}
+.x5aes86{color:#2997ff}
 .xcco1i1{color:#33445788}
 .xnb10qq{color:#4a86c7}
+.x384kio{color:#969faf}
+.x1dgjl5s{color:#a972ff}
+.x1dceu83{color:#ff5733}
 .x1tzlrjm{color:#FFFFFFCF}
+.x6a8pz2{color:rgb(0,102,204)}
+.x1dwbaoo{color:rgb(0,155,255)}
+.x11juowe{color:rgb(0,191,255)}
+.x121o9t3{color:rgb(0,217,89)}
+.x8xxv20{color:rgb(0,245,255)}
+.x7q9h74{color:rgb(0,255,179)}
+.x1js24u0{color:rgb(102,253,255)}
+.x8fujxf{color:rgb(217,224,255)}
+.x5ws9r6{color:rgb(255,224,69)}
+.x1e1fzfq{color:rgb(255,85,119)}
 .xttq42n{color:rgba(255,255,255,.8)}
 .x1ypdohk{cursor:pointer}
 .x78zum5{display:flex}
@@ -79,6 +95,7 @@ html[dir='rtl'] .xc73u3c{padding-left:20px}
 .xii97ek{transform:scale(.3)}
 .xscpjr8{will-change:filter}
 .xfo81ep{z-index:1000}
+.x1ccr1t9{z-index:2000}
 .x1q2oy4v{z-index:9999}
 .xr5g4ud:hover{color:#3E3E3E57}
 .xp1v1j9:hover{color:rbg(106,115,123)}
@@ -112,6 +129,7 @@ html[dir='rtl'] .xc73u3c{padding-left:20px}
 .xh8yej3{width:100%}
 .x1exxlbk{width:100px}
 .x1t9vceh{width:256px}
+.x1vdp4dz{width:57%}
 .xktia5q{width:80%}
 .x14atkfc{width:auto}
 .x1f1wgk5:hover::after{width:100%}
