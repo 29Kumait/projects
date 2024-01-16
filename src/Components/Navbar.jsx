@@ -16,7 +16,7 @@ const Navbar = ({ activeLink, setActiveLink, isMenuOpen }) => {
     ));
 
     return (
-        <div style={{ display: isMenuOpen ? 'block' : 'none' }}>
+        <div data-testid="navbar" style={{ display: isMenuOpen ? 'block' : 'none' }}>
             {navItems}
         </div>
     );
