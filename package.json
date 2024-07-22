@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
-    "@primer/octicons-react": "^19.8.0",
+    "@primer/octicons-react": "^19.11.0",
     "@react-buddy/ide-toolbox": "^2.4.0",
     "@stylexjs/stylex": "^0.3.0",
     "chart.js": "^4.4.1",
